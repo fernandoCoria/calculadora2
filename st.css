@@ -1,0 +1,115 @@
+:root{
+    --orange:#f26b4d;
+    --purple:#3a315e;
+    --darkGrey:#948a89;
+    --ligthGrey:#e3dfde;
+}
+
+body{
+    background-color:black;
+    font-family: 'Quicksand', sans-serif;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    height:800px;
+    width: 1000px;
+    display:grid;
+    grid-template-columns: repeat(12,12fr);
+    grid-template-rows: repeat(12,12fr);
+}
+
+.left{
+    background-color:var(--orange);
+    grid-area:1/1/13/7;
+    
+}
+.right{
+    background-color: var(--purple);
+    grid-area:1/7/13/13;
+}
+
+.calculator{   
+    border: 1px solid black;
+    grid-area: 2/5/12/9;
+    
+    display:grid;    
+}
+
+
+
+
+.status, .display,.bottom{
+    background-color: white;;
+}
+
+
+.status{
+    display:flex;
+    align-items:center;
+    padding: 0em 0.2em 0em 1.5em;
+    font-size: 0.9rem;
+}
+
+
+.display{
+    display:flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    padding:0 0.3em 0.3em 0;
+    font-size: 4rem;
+}
+
+
+
+
+
+
+
+.button{
+    font-size: 2em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator{
+    display:grid;
+    grid-template-columns:1fr;
+    grid-template-rows:repeat(8, 8fr);
+}
+
+
+
+.buttons{   
+    display:grid;
+    grid-template-columns:repeat(4, 4fr);
+    grid-template-rows:repeat(5, 5fr);
+    grid-row: 3/8;
+}
+
+.operator{    
+    background-color: var(--darkGrey);    
+}
+
+.operationPurple{
+    background-color:var(--purple);
+    color:white;
+}
+.operand{
+    background-color: var(--ligthGrey);
+}
+.equal{
+    background-color: var(--orange);
+    grid-column:span 2;
+}
+
+.operator, .equal{
+    color: white;
+    font-size:3em;
+
+}
+
+
