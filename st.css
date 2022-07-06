@@ -60,6 +60,7 @@ main{
     align-items: flex-end;
     padding:0 0.3em 0.3em 0;
     font-size: 4rem;
+    overflow: hidden;
 }
 
 
